@@ -21,7 +21,7 @@ const TextAnimation: React.FC<TextAnimationProps> = ({ textToAnimate }) => {
 };
 
 const Wrapper = styled.div`
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
   margin-top: 20px;
 `;

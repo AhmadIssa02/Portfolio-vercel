@@ -43,11 +43,11 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-      <main className="flex min-h-screen flex-col items-center justify-between pt-12 px-24 bg-gradient-to-r from-indigo-300 to-indigo-800">
+      <main className="flex min-h-screen font-body flex-col items-center justify-between pt-12 px-24 bg-gradient-to-r from-indigo-300 to-indigo-800">
         <div className="rounded-2xl shadow-lg bg-gray-100 w-4/5 h- relative">
           <div className='flex' >
             <ul className="flex justify-center mx-12 mt-10 space-x-4">
-              <li className="section transform transition-transform hover:scale-110"><a href="#home" className={`text-white font-Mooli bg-gradient-to-r from-indigo-300 to-indigo-800 px-4 py-2 rounded-full text-lg hover:underline ${activeSection === "home" ? "active" : ""}`} onClick={() => handleLinkClick("home")}>Home</a></li>
+              <li className="section transform transition-transform hover:scale-110"><a href="#home" className={`text-white font-semibold bg-gradient-to-r from-indigo-300 to-indigo-800 px-4 py-2 rounded-full text-lg hover:underline ${activeSection === "home" ? "active" : ""}`} onClick={() => handleLinkClick("home")}>Home</a></li>
               <li className="section transform transition-transform hover:scale-110"><a href="#about" className={`text-white font-semibold bg-gradient-to-r from-indigo-300 to-indigo-800 px-4 py-2 rounded-full text-lg hover:underline ${activeSection === "about" ? "active" : ""}`} onClick={() => handleLinkClick("about")}>About</a></li>
               <li className="section transform transition-transform hover:scale-110"><a href="#projects" className={`text-white font-semibold bg-gradient-to-r from-indigo-300 to-indigo-800 px-4 py-2 rounded-full text-lg hover:underline ${activeSection === "projects" ? "active" : ""}`} onClick={() => handleLinkClick("projects")}>Projects</a></li>
               <li className="section transform transition-transform hover:scale-110"><a href="#skills" className={`text-white font-semibold bg-gradient-to-r from-indigo-300 to-indigo-800 px-4 py-2 rounded-full text-lg hover:underline ${activeSection === "skills" ? "active" : ""}`} onClick={() => handleLinkClick("skills")}>Skills</a></li>

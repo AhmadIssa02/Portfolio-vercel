@@ -5,8 +5,8 @@ import React from 'react';
 function HomeComponent() {
   return (
     // <div className='flex'> 
-        <div className='mx-12 my-6'>
-        <div className=' text-indigo-900 my-8 font-semibold'> Languages and Frameworks </div>
+        <div className='mx-12 my-6 font-bold text-2xl'>
+        <div className=' text-indigo-900 my-8'> Languages and Frameworks </div>
             <div className="flex justify-evenly "> 
                 <img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white"/>
                 <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"/>
@@ -25,7 +25,7 @@ function HomeComponent() {
                 <img src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white"/>
             </div>
 
-            <div className='flex font-semibold justify-evenly my-4'>
+            <div className='flex justify-evenly my-4'>
                 <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"/>
                 <img src="https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white"/> 
                 <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"/>
