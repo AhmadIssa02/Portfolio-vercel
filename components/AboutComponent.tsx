@@ -9,11 +9,11 @@ function HomeComponent() {
           <div className="flex font-semibold">
             <div className=" ml-16 mr-6 mt-10 text-4xl text-indigo-900"> Ahmad Issa <br></br> 
               <div className=" mb-8 mt-4 text-xs">
-              Hey there, I am Ahmad Issa – your friendly neighborhood computer science expert and all-around enthusiast! 🥳
+              Hey there, I am Ahmad Issa - your friendly neighborhood computer science expert and all-around enthusiast! &nbsp;🥳
               <br/><br/>
               I am a senior student pursuing a degree at the Lebanese American University. I am passionate about technology, coding, and exploring the digital world. Coding is more than just a hobby for me; it is a way to bring ideas to life and solve real-world problems. I thrive on taking on significant projects that challenge my skills and push me to learn and grow as a developer. 🖥️
               <br/><br/>
-              Some people might call me an extrovert, and they are absolutely right! I love meeting new people, making friends, and having a good time. I believe that my social skills are top-notch, and I thrive in group settings. Let's chat, laugh, and make some awesome memories together! 🗣️
+              Some people might call me an extrovert, and they are absolutely right! I love meeting new people, making friends, and having a good time. I believe that my social skills are top-notch, and I thrive in group settings. Let&rsquo;s chat, laugh, and make some awesome memories together! 🗣️
               <br/><br/>
               I am dedicated to staying up-to-date with the latest trends and technologies and to embark on new adventures, both in my academic journey and my personal development, as I strive to become the best version of myself.
               <br/><br/>
