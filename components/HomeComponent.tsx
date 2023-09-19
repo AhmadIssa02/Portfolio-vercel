@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
-import myImage from '../public/images/Ahmad.png';
+import myImage from 'public/images/Ahmad.png';
 import TextAnimation from './typewriterAnimation';
 
 function HomeComponent() {

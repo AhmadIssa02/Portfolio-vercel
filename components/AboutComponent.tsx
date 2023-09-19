@@ -1,6 +1,6 @@
 // MyComponent.jsx
 import React from 'react';
-import myImage2 from '../public/images/myImage2.png';
+import myImage2 from 'public/images/myImage2.png';
 function HomeComponent() {
   return (
     <div>
