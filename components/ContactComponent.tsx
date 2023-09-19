@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 // MyComponent.jsx
 import React from 'react';
 import myImage from '../images/Ahmad.png';
