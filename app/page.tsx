@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import myImage from '../images/Ahmad.png';
+import myImage from 'public/images/Ahmad.png';
 import HomeComponent from "../components/HomeComponent";
 import AboutComponent from "../components/AboutComponent";
 import ProjectsComponent from "../components/ProjectsComponent";

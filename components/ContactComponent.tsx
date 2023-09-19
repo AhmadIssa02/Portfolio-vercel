@@ -1,11 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 // MyComponent.jsx
 import React from 'react';
-import myImage from '../images/Ahmad.png';
-import email from '../images/email.png';
-import linkedin from '../images/linkedin.png';
-import github from '../images/github.png';
-import resume from '../images/resume.png';
+import myImage from '../public/images/Ahmad.png';
+import email from '../public/images/email.png';
+import linkedin from '../public/images/linkedin.png';
+import github from '../public/images/github.png';
+import resume from '../public/images/resume.png';
 
 function HomeComponent() {
   return (

@@ -1,7 +1,5 @@
 // MyComponent.jsx
 import React from 'react';
-import myImage from '../images/Ahmad.png';
-import ninjaco from '../images/ninjaco.png';
 function HomeComponent() {
   return (
     <div className='items-center'>
