@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-page-custom-font */
 "use client";
 import React, { useEffect, useState } from "react";
 import myImage from 'public/images/Ahmad.png';
@@ -9,7 +10,7 @@ import ContactComponent from "../components/ContactComponent";
 import Head from "next/head";
 
 export default function Home() {
-  const [activeSection, setActiveSection] = useState("home"); // Initial active section
+  const [activeSection, setActiveSection] = useState("home"); 
 
   const handleLinkClick = (sectionId: React.SetStateAction<string>) => {
     setActiveSection(sectionId);
@@ -20,11 +21,15 @@ export default function Home() {
     links.forEach(link => {
       link.addEventListener('click', (e) => {
         e.preventDefault();
-        const targetId = e.currentTarget.getAttribute('href')?.substring(1); // Use e.currentTarget
-        handleLinkClick(targetId);
+        const targetId = (e.currentTarget as HTMLElement)?.getAttribute('href')?.substring(1);
+        if (targetId) {
+          handleLinkClick(targetId);
+        }
       });
     });
   }, []);
+  
+  
 
   // Define your components for each section
   const sections: { [key: string]: JSX.Element } = {
@@ -38,6 +43,8 @@ export default function Home() {
   return (
     <>
        <Head>
+        <title>Ahmad Issa</title>
+        <meta name="description" content="Ahmad Issa's Portfolio" />
         <link
           href="https://fonts.googleapis.com/css2?family=Mooli:wght@400;500;700&display=swap"
           rel="stylesheet"
