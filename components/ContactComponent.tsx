@@ -28,7 +28,7 @@ function HomeComponent() {
                 <a className='ml-4  text-sky-700 hover:underline' href="/resume.pdf" download> Download Resume </a>
             </div>
         </div>
-        <img className="w-96 h-96 mr-16 " src={myImage.src} alt="myImage" />
+        <img className="w-96 h-96 mt-6" src={myImage.src} alt="myImage" />
      
     </div>
   );

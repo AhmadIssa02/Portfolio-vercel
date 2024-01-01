@@ -8,8 +8,8 @@ function HomeComponent() {
 
   return (
     <div>
-      <div className="flex flex-col sm:flex-row mx-2 sm:ml-1 mt-1 lg:ml-6 lg:mt-6 font-semibold">
-        <div className="mx-4 lg:ml-10 font-semibold mt-6 text-lg lg:text-2xl text-indigo-900">
+      <div className="flex flex-col sm:flex-row mt-1 lg:ml-6 lg:mt-6 font-semibold">
+        <div className="ml-4 lg:ml-10 font-semibold mt-6 text-lg lg:text-2xl text-indigo-900">
           <div className='mx-2 lg:ml-6 font-bold text-base md:text-2x lg:text-3xl'>Hello World! </div>
           <div className='mx-2 lg:ml-6 my-2 font-bold text-lg md:text-3xl lg:text-5xl'>I am Ahmad Issa</div>
           <div className='mx-2 lg:ml-6 text-base md:text-lg lg:text-xl'>  Software Engineer </div> 
@@ -19,8 +19,8 @@ function HomeComponent() {
             <div className="mt-2"/>
             I enjoy working on projects that challenge me to innovate and deliver high-quality software solutions.
           </div>
-        </div>
-        <img className="bottom-0 mb-0 pb-0 w-48 h-48 sm:w-60 sm:h-60 md:w-72 md:h-72 lg:w-96 lg:h-96 ml-2 md:ml-6 lg:ml-12 mt-auto " src={myImage.src} alt="My Image" />
+        </div>  
+        <img className="mx-auto w-48 h-48 sm:w-60 sm:h-60 md:w-72 md:h-72 lg:w-96 lg:h-96 mt-auto " src={myImage.src} alt="My Image" />
       </div>
     </div>
   );

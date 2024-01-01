@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 // MyComponent.jsx
 import React from 'react';
 import myImage2 from 'public/images/myImage2.png';
@@ -6,8 +7,8 @@ function HomeComponent() {
     <div>
       
 {/* <hr className="mt-8 mx-12 h-0.5 border-t-0 w-96 bg-gradient-to-r from-indigo-400 to-indigo-900 opacity-100 dark:opacity-50" /> */}
-          <div className="flex font-semibold">
-            <div className=" ml-16 mr-6 mt-10 text-4xl text-indigo-900"> Ahmad Issa <br></br> 
+          <div className="flex font-black lg:font-semibold">
+            <div className="ml-4 m-2 sm:ml-8 sm:m-6 lg:ml-16 lg:mr-6 lg:mt-10 text-sm md:text-3xl lg:text-4xl text-indigo-900"> Ahmad Issa <br></br> 
               <div className=" mb-8 mt-4 text-xs">
               Hey there, I am Ahmad Issa - your friendly neighborhood computer science expert and all-around enthusiast! &nbsp;🥳
               <br/><br/>
@@ -20,7 +21,7 @@ function HomeComponent() {
               Feel free to connect with me if you share similar interests or if you would like to collaborate on a project. Let us learn and grow together!
               </div>
             </div>
-            <img className=" mt-8 mb-6 rounded-3xl w-96 h-96 mr-8" src={myImage2.src} alt="My Image" />
+            <img className="mt-16 lg:mt-12 mb-6 rounded-3xl w-64 h-64 md:w-96 md:h-96 mr-4" src={myImage2.src} alt="My Image" />
           </div>
     </div>
   );
