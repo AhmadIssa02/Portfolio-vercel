@@ -45,12 +45,13 @@ export default function Home() {
        <Head>
         <title>Ahmad Issa</title>
         <meta name="description" content="Ahmad Issa's Portfolio" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
         <link
           href="https://fonts.googleapis.com/css2?family=Mooli:wght@400;500;700&display=swap"
           rel="stylesheet"
         />
       </Head>
-      <main className="flex min-h-screen font-body flex-col items-center justify-between pt-12  md:px-24 bg-gradient-to-r from-indigo-300 to-indigo-800">
+      <main className="flex overflow-x-hidden min-h-screen font-body flex-col items-center justify-between pt-12  md:px-24 bg-gradient-to-r from-indigo-300 to-indigo-800">
         <div className="rounded-2xl shadow-lg sm:mb-10 md:mb-2 bg-gray-100 w-auto lg:w-11/12 first-letter:h-relative ">
           <div className='flex bg-gradient-to-r from-indigo-300 to-indigo-800 pb-4 rounded-t-2xl' >
             <ul className="flex justify-between mx-auto mt-6 space-x-2 md:space-x-4 ">
