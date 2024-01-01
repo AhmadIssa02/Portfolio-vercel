@@ -6,7 +6,7 @@ import github from 'public/images/github.png';
 import linkedin from 'public/images/linkedIn.png';
 import email from 'public/images/email.png';
 import resume from 'public/images/resume.png';
-
+//comment
 function HomeComponent() {
   return (
     <div className='flex'>
