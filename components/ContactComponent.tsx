@@ -28,7 +28,6 @@ function HomeComponent() {
                 <img className="w-12 h-12" src={resume.src} alt="resume" />
                 <a className='ml-0 md:ml-2 mt-2 lg:mt-0 text-black hover:underline' href="/resume.pdf" download>Download Resume </a>
                 <img className="mt-1 w-3 h-3 md:w-5 md:h-5" src={download.src} alt="download" />
-
             </div>
         </div>
         <img className=" bottom-0 w-64 h-64 md:w-96 md:h-96 mt-6 " src={myImage.src} alt="myImage" />
