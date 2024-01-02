@@ -20,7 +20,7 @@ function HomeComponent() {
             I enjoy working on projects that challenge me to innovate and deliver high-quality software solutions.
           </div>
         </div>  
-        <img className="mx-auto w-48 h-48 sm:w-60 sm:h-60 md:w-72 md:h-72 lg:w-96 lg:h-96 mt-auto " src={myImage.src} alt="My Image" />
+        <img className="mx-auto w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-96 lg:h-96 mt-auto md:mt-4  " src={myImage.src} alt="My Image" />
       </div>
     </div>
   );

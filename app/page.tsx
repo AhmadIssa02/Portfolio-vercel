@@ -53,7 +53,7 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-      <main className="flex overflow-x-hidden min-h-screen font-body flex-col items-center justify-between pt-12 md:px-24 bg-cover bg-center" style={{ backgroundImage }}>
+      <main className="flex overflow-x-hidden min-h-screen font-body flex-col items-center justify-between pt-12 md:px-20 bg-cover bg-center" style={{ backgroundImage }}>
         <div className="rounded-2xl shadow-lg sm:mb-10 md:mb-2 bg-gray-100 w-auto lg:w-10/12 first-letter:h-relative ">
           <div className='flex ' > 
           {/* bg-black pb-4 rounded-t-2xl */}
