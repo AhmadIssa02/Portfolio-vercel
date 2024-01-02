@@ -8,7 +8,7 @@ import ProjectsComponent from "../components/ProjectsComponent";
 import SkillsComponent from "../components/SkillsComponent";
 import ContactComponent from "../components/ContactComponent";
 import Head from "next/head";
-
+import background from 'public/images/background4.png';
 export default function Home() {
   const [activeSection, setActiveSection] = useState("home"); 
 
@@ -40,6 +40,8 @@ export default function Home() {
     contact: <ContactComponent />,
   };
 
+  const backgroundImage = `url(${background.src})`;
+
   return (
     <>
        <Head>
@@ -51,15 +53,16 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-      <main className="flex overflow-x-hidden min-h-screen font-body flex-col items-center justify-between pt-12  md:px-24 bg-gradient-to-r from-indigo-300 to-indigo-800">
-        <div className="rounded-2xl shadow-lg sm:mb-10 md:mb-2 bg-gray-100 w-auto lg:w-11/12 first-letter:h-relative ">
-          <div className='flex bg-gradient-to-r from-indigo-300 to-indigo-800 pb-4 rounded-t-2xl' >
-            <ul className="flex justify-between mx-auto mt-6 space-x-2 md:space-x-4 ">
-              <li className="section transform transition-transform hover:scale-110"><a href="#home" className={`text-indigo-900 font-extrabold bg-white rounded-full text-base lg:text-xl hover:underline px-2 md:px-4 lg:px-8 py-2 ${activeSection === "home" ? "active" : ""}`} onClick={() => handleLinkClick("home")}>Home</a></li>
-              <li className="section transform transition-transform hover:scale-110"><a href="#about" className={`text-indigo-900 font-semibold bg-white rounded-full text-base lg:text-xl hover:underline px-2 md:px-4 lg:px-8 py-2 ${activeSection === "about" ? "active" : ""}`} onClick={() => handleLinkClick("about")}>About</a></li>
-              <li className="section transform transition-transform hover:scale-110"><a href="#projects" className={`text-indigo-900 font-semibold bg-white rounded-full text-base lg:text-xl hover:underline px-2 md:px-4 lg:px-8 py-2 ${activeSection === "projects" ? "active" : ""}`} onClick={() => handleLinkClick("projects")}>Projects</a></li>
-              <li className="section transform transition-transform hover:scale-110"><a href="#skills" className={`text-indigo-900 font-semibold bg-white rounded-full text-base lg:text-xl hover:underline px-2 md:px-4 lg:px-8 py-2 ${activeSection === "skills" ? "active" : ""}`} onClick={() => handleLinkClick("skills")}>Skills</a></li>
-              <li className="section transform transition-transform hover:scale-110"><a href="#contact" className={`text-indigo-900 font-semibold bg-white rounded-full text-base lg:text-xl hover:underline px-2 md:px-4 lg:px-8 py-2 ${activeSection === "contact" ? "active" : ""}`} onClick={() => handleLinkClick("contact")}>Contact</a></li>
+      <main className="flex overflow-x-hidden min-h-screen font-body flex-col items-center justify-between pt-12 md:px-24 bg-cover bg-center" style={{ backgroundImage }}>
+        <div className="rounded-2xl shadow-lg sm:mb-10 md:mb-2 bg-gray-100 w-auto lg:w-10/12 first-letter:h-relative ">
+          <div className='flex ' > 
+          {/* bg-black pb-4 rounded-t-2xl */}
+            <ul className="flex justify-between mx-auto mt-6 space-x-2 md:space-x-4 text-white">
+              <li className="section transform transition-transform hover:scale-110"><a href="#home" className={` font-extrabold bg-black rounded-2xl text-base lg:text-xl hover:underline px-2 md:px-4 lg:px-8 py-2 ${activeSection === "home" ? "active" : ""}`} onClick={() => handleLinkClick("home")}>Home</a></li>
+              <li className="section transform transition-transform hover:scale-110"><a href="#about" className={` font-semibold bg-black rounded-2xl text-base lg:text-xl hover:underline px-2 md:px-4 lg:px-8 py-2 ${activeSection === "about" ? "active" : ""}`} onClick={() => handleLinkClick("about")}>About</a></li>
+              <li className="section transform transition-transform hover:scale-110"><a href="#projects" className={` font-semibold bg-black rounded-2xl text-base lg:text-xl hover:underline px-2 md:px-4 lg:px-8 py-2 ${activeSection === "projects" ? "active" : ""}`} onClick={() => handleLinkClick("projects")}>Projects</a></li>
+              <li className="section transform transition-transform hover:scale-110"><a href="#skills" className={` font-semibold bg-black rounded-2xl text-base lg:text-xl hover:underline px-2 md:px-4 lg:px-8 py-2 ${activeSection === "skills" ? "active" : ""}`} onClick={() => handleLinkClick("skills")}>Skills</a></li>
+              <li className="section transform transition-transform hover:scale-110"><a href="#contact" className={` font-semibold bg-black rounded-2xl text-base lg:text-xl hover:underline px-2 md:px-4 lg:px-8 py-2 ${activeSection === "contact" ? "active" : ""}`} onClick={() => handleLinkClick("contact")}>Contact</a></li>
             </ul>
           </div>
           {sections[activeSection]}

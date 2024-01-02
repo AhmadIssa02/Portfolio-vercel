@@ -6,7 +6,7 @@ import React from 'react';
 function HomeComponent() {
   return (
     <div className='mx-12 my-6 font-bold text-2xl'>
-      <div className='text-indigo-900 my-8'>Languages and Frameworks</div>
+      <div className='text-black my-8'>Languages and Frameworks</div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"/>
@@ -32,7 +32,7 @@ function HomeComponent() {
         {/* Add more framework badges here */}
       </div>
 
-      <div className='text-indigo-900 my-8 font-semibold'>Tools</div>
+      <div className='text-black my-8 font-semibold'>Tools</div>
 
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
       <img src="https://img.shields.io/badge/Eclipse-FE7A16.svg?style=for-the-badge&logo=Eclipse&logoColor=white"/> 

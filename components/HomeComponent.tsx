@@ -9,7 +9,7 @@ function HomeComponent() {
   return (
     <div>
       <div className="flex flex-row mt-1 lg:ml-6 lg:mt-6 font-semibold">
-        <div className="ml-4 lg:ml-10 font-semibold mt-6 text-lg lg:text-2xl text-indigo-900">
+        <div className="ml-4 lg:ml-10 font-semibold mt-6 text-lg lg:text-2xl text-black">
           <div className='mx-2 lg:ml-6 font-bold text-base md:text-2x lg:text-3xl'>Hello World! </div>
           <div className='mx-2 lg:ml-6 my-2 font-bold text-lg md:text-3xl lg:text-5xl'>I am Ahmad Issa</div>
           <div className='mx-2 lg:ml-6 text-base md:text-lg lg:text-xl'>  Software Engineer </div> 
