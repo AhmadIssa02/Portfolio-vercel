@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -8,10 +10,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      //disable eslint for this line
       backgroundColor: {
-        "custom-blue": "#0CBABA",
-        "custom-dark": "#1F0322",
-        "custom-light": "#827191",
+        "primary-color": "#CCDAF1",
+        "secondary-color": "#b09c8b",
+        "tertiary-color": "#b8cbec",
+        "quaternary-color": "#2b3f8b",
+      },
+      textColor: {
+        "primary-color": "#CCDAF1",
+        "secondary-color": "#27668c",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

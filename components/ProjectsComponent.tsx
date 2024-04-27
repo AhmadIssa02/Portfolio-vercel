@@ -1,30 +1,26 @@
-// MyComponent.jsx
 import React from 'react';
-function HomeComponent() {
+import Image from 'next/image';
+
+interface projectsData {
+  title: string;
+  image: string;
+  link: string;
+  text: string;
+}
+
+const ProjectComponent: React.FC<projectsData> = ({ title, image, link, text }) => {
   return (
-    <div className='flex flex-col items-center '>
-        <div className="flex justify-center items-center w-full my-8"> 
-          <div className="flex space-x-10 md:space-x-16 lg:space-x-32">
-            <a href="https://ninja-co.live/">
-              <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-64 lg:h-64 font-bold bg-gradient-to-r from-stone-700 to-stone-950 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-500">
-              <h2 className="text-white text-base md:text-lg lg:text-2xl"> Ninja-co.live </h2>
-              </div>
-            </a>
-            <a href = "https://github.com/AhmadIssa02/AhmadIssa02-Pacman-Search-Agents-AI-Alogrithms">
-              <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-64 lg:h-64 font-bold bg-gradient-to-r from-stone-700 to-stone-950 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-500">
-                <h2 className="text-white text-base md:text-lg  lg:text-2xl"> Pacman AI </h2>
-              </div>
-            </a>
-          </div>
+    <div className="bg-white text-secondary-color font-medium rounded-lg shadow-md p-3  text-xs md:text-lg w-[47%] md:w-[42%]  h-auto hover:shadow-xl hover:scale-105 transition-shadow duration-300 ease-in-out flex flex-col text-center items-center">
+      <img src={image} alt={title} width={120} height={120} className="w-full h-32 md:h-48 object-cover rounded-t-lg" />
+      <div className="w-full">
+        <h2 className="font-extrabold text-base md:text-2xl my-3 ">{title}</h2>
+        <div className=" ">
+          <div className="mb-1 text-[8px] md:text-base text-left">{text}</div>
         </div>
-        <a href = "https://github.com/AhmadIssa02">
-          <div className="w-64 h-8 mb-10 font-bold text-white bg-gradient-to-r from-stone-700 to-stone-950 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-500">
-            My Github Account
-          </div>
-        </a>
+      </div>
+      <a href={link} target="_blank" className="bg-quaternary-color text-white rounded-lg p-3 w-3/5 mt-2 hover:bg-quaternary-color/80 transition-all duration-300 ease-in-out">View Project</a>
     </div>
   );
 }
 
-export default HomeComponent;
-
+export default ProjectComponent;
