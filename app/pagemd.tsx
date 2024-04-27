@@ -6,16 +6,13 @@ import Image from 'next/image';
 import Typewriter from 'typewriter-effect';
 import ContactComponent from '@/components/ContactComponentMd';
 import myImage2 from "../public/images/mypicture.jpeg"
-import myImage4 from "../public/images/myImage2.png"
 import myImage5 from "../public/images/testimage.jpeg"
-import myImage6 from "../public/images/testimage2.jpeg"
+import myImage6 from "../public/images/testImage2.jpeg"
 import Skill from '@/components/SkillsComponent';
 import ProjectComponent from '@/components/ProjectsComponent';
-import ninjaco from "../public/images/ninjaco.png"
 import ninjaco2 from "../public/images/ninjaco2.png"
 import pacman from "../public/images/AI Pacman.jpg"
 import exploro from "../public/images/exploro.png"
-import game from "../public/images/flying baby.jpg"
 import tanks from "../public/images/tankz.png"
 
 

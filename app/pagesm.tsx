@@ -3,16 +3,14 @@
 import React from 'react';
 import { useState, useEffect } from "react";
 import myImage from "../public/images/Ahmad.png"
-import Link from 'next/link';
 import Typewriter from 'typewriter-effect';
 import Image from 'next/image';
 import ContactComponentSm from '@/components/ContactComponentSm';
 import Skill from '@/components/SkillsComponent';
 import myImage2 from "../public/images/mypicture.jpeg"
 import ProjectComponent from '@/components/ProjectsComponent';
-import myImage6 from "../public/images/testimage2.jpeg"
+import myImage6 from "../public/images/testImage2.jpeg"
 import ninjaco from "../public/images/ninjaco.png"
-import ninjaco2 from "../public/images/ninjaco2.png"
 import pacman from "../public/images/AI Pacman.jpg"
 import exploro from "../public/images/exploro.png"
 import tanks from "../public/images/tankz.png"
