@@ -30,7 +30,7 @@ function ContactComponentMd() {
                         </div>
                         <div className='flex items-center ml-2 md:ml-6 lg:ml-20 mt-6 underline hover:scale-105'>
                             <Image src={resume} width={48} height={48} alt="resume" />
-                            <a className='ml-0 md:ml-2   hover:underline text-[10px] md:text-[24px] ' href="/resume.pdf" download>Download Resume</a>
+                            <a className='ml-0 md:ml-2   hover:underline text-[10px] md:text-[24px] ' href="/Ahmad-Issa-Resume.pdf" download>Download Resume</a>
                             <Image className="w-4 h-4 mt-2" src={download} width={10} height={2} alt="download" />
                         </div>
                     </div>
