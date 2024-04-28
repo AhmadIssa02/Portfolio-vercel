@@ -12,14 +12,14 @@ const config: Config = {
     extend: {
       //disable eslint for this line
       backgroundColor: {
-        "primary-color": "#CCDAF1",
+        "primary-color": "#e0e8f6",
         "secondary-color": "#b09c8b",
         "tertiary-color": "#b8cbec",
         "quaternary-color": "#2b3f8b",
       },
       textColor: {
         "primary-color": "#CCDAF1",
-        "secondary-color": "#27668c",
+        "secondary-color": "#1b4762",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

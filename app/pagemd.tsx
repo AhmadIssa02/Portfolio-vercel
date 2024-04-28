@@ -80,6 +80,7 @@ const PageMd: React.FC = () => {
     const scrollToSection = (id: string) => {
         const element = document.getElementById(id);
         if (element) {
+
             element.scrollIntoView({ behavior: "smooth" });
         }
     };
@@ -107,7 +108,7 @@ const PageMd: React.FC = () => {
     return (
         <div className='bg-primary-color'>
             <header className={`z-10 fixed w-full bg-primary-color mx-auto py-6 border-b border-b-1 border-black transition-all ease-in-out duration-500  ${visible ? 'top-0' : '-top-full'} `}>
-                <div className="flex gap-16 text-xl font-semibold items-center ml-16  ">
+                <div className="flex gap-16 text-xl font-bold items-center ml-16  ">
                     <button onClick={() => scrollToSection("home")} className='hover:underline'> Home </button>
                     <button onClick={() => scrollToSection("about")} className='hover:underline'> About </button>
                     <button onClick={() => scrollToSection("skills")} className='hover:underline'> Skills </button>
@@ -140,7 +141,7 @@ const PageMd: React.FC = () => {
                     <Image className=" ml-20 rounded-xl w-1/2 md:hidden lg:block" src={myImage6.src} width={500} height={200} alt="My Image" />
                     <div className='font-black text-7xl ml-4 md:hidden lg:block'> Who am I?</div>
                     <div className='bg-tertiary-color w-2/5 absolute left-1/2 mt-28 rounded-md md:hidden lg:block'>
-                        <div className='p-6 font-semibold'>
+                        <div className='p-6 font-black'>
                             Hello everyone, I'm Ahmad Issa, a dedicated Software Engineer with a passion for coding, technology, and sports. Throughout my academic journey, I accumulated over 400 volunteering hours, participated in two university exchange programs, in addition to one during high school, all while maintaining a high level of academic excellence, ultimately graduating from university with distinction.
                         </div>
                     </div>
@@ -148,20 +149,21 @@ const PageMd: React.FC = () => {
                     <Image className=" rounded-xl absolute left-6 md:block lg:hidden" src={myImage5.src} width={350} height={150} alt="My Image" />
                     <div className='font-black absolute left-[60%]  text-5xl  md:block lg:hidden'> Who am I?</div>
                     <div className=' rounded-md absolute left-[40%] w-1/2 mt-16 md:block lg:hidden'>
-                        <div className='font-semibold rounded-md text-[13px] bg-tertiary-color p-4'>
+                        <div className='font-black rounded-md text-[13px] bg-tertiary-color p-4'>
                             Hello everyone, I'm Ahmad Issa, a dedicated Software Engineer with a passion for coding, technology, and sports. Throughout my academic journey, I accumulated over 400 volunteering hours, participated in two university exchange programs, in addition to one during high school, all while maintaining a high level of academic excellence, ultimately graduating from university with distinction.
                         </div>
                     </div>
                 </div>
                 <div className='py-4 px-20 md:mt-[440px] lg:mt-4'>
                     <div className='bg-tertiary-color w-full rounded-md p-2'>
-                        <div className='p-2 font-semibold text-sm text-left'>
+                        <div className='p-2 font-black text-secondary-color text-sm text-left'>
                             During my academic journey, I excelled with a remarkable 98% on my high school Jordanian exams and graduated from LAU with a 3.55 GPA in Computer Science, showcasing my dedication and ability to meet high standards.
                             {/* During my academic journey, I excelled academically, achieving a remarkable 98% on my high school Jordanian exams and graduating from the Lebanese American University (LAU) with a commendable 3.55 GPA in Computer Science. These achievements not only reflect my dedication to learning but also demonstrate my ability to perform under pressure and meet high standards. */}
                             {/* <br></br> <br></br> */}
                             Beyond academics, my character has been deeply influenced by my volunteering experiences as I spent over 400 hours contributing to various NGOs. These experiences instilled in me a sense of empathy, teamwork, and social responsibility.
                             <br></br> <br></br>
-                            My professional journey has been equally enriching. I've had the privilege of gaining practical experience through three internships. As a research intern at GIZ, I delved into the intricacies of data analysis and policy research, honing my analytical skills and deepening my understanding of complex issues. My tenure as a software developer intern at Mozaic provided hands-on exposure to .NET development and taught me valuable lessons about teamwork and project management. Working closely with a team, I learned how to utilize Git services effectively, ensuring smooth collaboration and version control throughout the software development lifecycle. Additionally, my role as a technical support engineer at Al-Awael Specialized Technical Services further sharpened my problem-solving abilities and customer-centric approach.
+                            In my professional journey, I've gained valuable experience through three internships. At GIZ, I honed data analysis and policy research skills. At Mozaic, I gained hands-on experience with .NET development, emphasizing teamwork and project management. Finally, at Al-Awael Specialized Technical Services, I further developed problem-solving and customer-centric skills as a technical support engineer.
+                            {/* My professional journey has been equally enriching. I've had the privilege of gaining practical experience through three internships. As a research intern at GIZ, I delved into the intricacies of data analysis and policy research, honing my analytical skills and deepening my understanding of complex issues. My tenure as a software developer intern at Mozaic provided hands-on exposure to .NET development and taught me valuable lessons about teamwork and project management. Working closely with a team, I learned how to utilize Git services effectively, ensuring smooth collaboration and version control throughout the software development lifecycle. Additionally, my role as a technical support engineer at Al-Awael Specialized Technical Services further sharpened my problem-solving abilities and customer-centric approach. */}
                             <br></br> <br></br>
                             As a participant in the KLYES program at 16, I spent a transformative academic year in the United States. This experience instilled in me resilience and adaptability, qualities that were further honed during my time as an international student at LAU in Lebanon when I got accepted in the MEPI-TL program, where I embraced new cultures and educational challenges. Additionally, an exchange semester at Kent State University broadened my perspective and reinforced my ability to navigate diverse environments.
                             <br></br><br></br>
