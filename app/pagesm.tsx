@@ -14,6 +14,7 @@ import ninjaco from "../public/images/ninjaco.png"
 import pacman from "../public/images/AI Pacman.jpg"
 import exploro from "../public/images/exploro.png"
 import tanks from "../public/images/tankz.png"
+import password from "../public/images/Capture.jpg"
 
 
 
@@ -48,6 +49,12 @@ const PageSm: React.FC = () => {
             image: tanks.src,
             link: "https://github.com/quoc796/TankZ",
             text: "A tank battle game where you challenge yourself against an opponent in a fun one-on-one shooting war experience.",
+        },
+        {
+            title: "Password Manager",
+            image: password.src,
+            link: "https://github.com/AhmadIssa02/PasswordManager",
+            text: "A secure password manager that allows users to store, retrieve, and delete passwords for different accounts.",
         }
     ];
 
@@ -134,7 +141,7 @@ const PageSm: React.FC = () => {
                             strings: ["Hello World! My name is Ahmad Issa", "I'm a Software Engineer", "I hold a degree in Computer Science from LAU", "I'm a Tech Enthusiast"],
                             autoStart: true,
                             loop: true,
-                            delay: 80,
+                            delay: 50,
                         }}
                     />
                 </div>
@@ -183,15 +190,15 @@ const PageSm: React.FC = () => {
                     {projectsData.map((project, index) => (
                         <ProjectComponent key={index} title={project.title} image={project.image} link={project.link} text={project.text} />
                     ))}
-                    <div className="bg-white text-secondary-color mt-4 rounded-lg shadow-md p-3  w-2/3  h-auto hover:shadow-xl hover:scale-105 transition-shadow duration-300 ease-in-out flex flex-col text-center items-center">
-                        <img src={myImage2.src} alt="myImage" width={70} height={70} className="w-52 object-cover rounded-t-lg" />
+                    <div className="bg-quaternary-color text-white rounded-lg shadow-md p-3  w-[47%] md:w-[42%]  h-auto hover:shadow-xl hover:scale-105 transition-shadow duration-300 ease-in-out flex flex-col text-center items-center">
+                        <img src={myImage2.src} alt="myImage" width={70} height={70} className="w-full h-32 md:h-48 object-cover rounded-t-lg" />
                         <div className="w-full">
-                            <h2 className="font-extrabold text-lg my-3 ">AhmadIssa02</h2>
+                            <h2 className="font-extrabold text-base md:text-2xl my-3 ">AhmadIssa02</h2>
                             <div className=" ">
-                                <div className="mb-1 text-sm font-medium text-center">These and many more cool projects are on my Github!!</div>
+                                <div className="mb-1 text-xs font-medium text-center">These and many more cool projects are on my Github!!</div>
                             </div>
                         </div>
-                        <a href="https://github.com/AhmadIssa02" target="_blank" className="bg-quaternary-color text-white rounded-lg p-3 w-3/5 mt-2 hover:bg-quaternary-color/80 transition-all duration-300 ease-in-out">My Github </a>
+                        <a href="https://github.com/AhmadIssa02" target="_blank" className="bg-white text-secondary-color text-sm rounded-lg p-2 w-3/5 mt-6 hover:bg-quaternary-color/80 transition-all duration-300 ease-in-out">My Github </a>
                     </div>
                 </div>
             </div>
