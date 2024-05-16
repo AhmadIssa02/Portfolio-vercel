@@ -15,6 +15,7 @@ import pacman from "../public/images/AI Pacman.jpg"
 import exploro from "../public/images/exploro.png"
 import tanks from "../public/images/tankz.png"
 import password from "../public/images/Capture.jpg"
+import myImage3 from "../public/images/mypicture3.jpeg"
 
 
 const PageMd: React.FC = () => {
@@ -195,7 +196,7 @@ const PageMd: React.FC = () => {
                     <ProjectComponent key={index} title={project.title} image={project.image} link={project.link} text={project.text} />
                 ))}
                 <div className="bg-quaternary-color text-white rounded-lg shadow-md p-3  w-[47%] md:w-[42%]  h-auto hover:shadow-xl hover:scale-105 transition-shadow duration-300 ease-in-out flex flex-col text-center items-center">
-                    <img src={myImage2.src} alt="myImage" width={70} height={70} className="w-full h-32 md:h-48 object-cover rounded-t-lg" />
+                    <img src={myImage3.src} alt="myImage" width={70} height={70} className="w-full h-32 md:h-64 object-cover rounded-t-lg" />
                     <div className="w-full">
                         <h2 className="font-extrabold text-base md:text-2xl my-3 ">AhmadIssa02</h2>
                         <div className=" ">
