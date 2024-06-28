@@ -60,7 +60,7 @@ const PageSm: React.FC = () => {
 
     const skillsData = [
         {
-            title: 'Langauges',
+            title: 'Languages',
             skills: ['Python', 'Java', 'JavaScript', 'TypeScript', 'C#'],
         },
         {
@@ -141,7 +141,8 @@ const PageSm: React.FC = () => {
                             strings: ["Hello World! My name is Ahmad Issa", "I'm a Software Engineer", "I hold a degree in Computer Science from LAU", "I'm a Tech Enthusiast"],
                             autoStart: true,
                             loop: true,
-                            delay: 50,
+                            delay: 45,
+                            deleteSpeed: 15,
                         }}
                     />
                 </div>
